@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "leiko";
+  src: url("./font/Leiko-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.active {
+  background: linear-gradient(
+    93.99deg,
+    rgba(223, 195, 157, 0.4) -9.94%,
+    rgba(248, 228, 190, 0.4) 19.83%,
+    rgba(223, 195, 157, 0.4) 50.71%,
+    rgba(248, 228, 190, 0.4) 81.26%,
+    rgba(248, 228, 190, 0.4) 111.66%
+  );
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 0px 0px 30px 30px;
+}
+
+.dancing {
+  font-family: "Dancing Script";
+}
+.line {
+  width: 120px;
+}
+.popular-menu {
+  background-size: 120px;
+}
+
+@media (min-width: 640px) {
+  .popular-menu {
+    background-size: 200px;
+  }
+  .line {
+    width: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .popular-menu {
+    background-size: 250px;
+  }
+  .line {
+    width: 200px;
+  }
+}
+.btn {
+  @apply bg-[#F7E1BC] bg-opacity-30 rounded-2xl text-[#F8E4BE] px-3 py-2;
+}
+/* .btn {
+  border: solid 10px transparent;
+  border-radius: 30px;
+
+  background-image: linear-gradient(#f7e1bc, #f7e1bc),
+    linear-gradient(to top right, #e0a872, #f8e4be, #fff3e0, #e0a872);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+} */
